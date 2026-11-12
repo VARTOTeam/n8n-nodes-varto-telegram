@@ -33,7 +33,7 @@ const updateTypes = [
  'removed_chat_boost',
 ];
 
-export class TelegramPoll implements INodeType {
+export class VartoTelegramPoll implements INodeType {
  description: INodeTypeDescription = {
   displayName: 'VARTO Telegram Poll',
   name: 'vartoTelegramPoll',
