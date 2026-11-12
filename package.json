@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-varto-telegram",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Telegram Bot API Long Polling trigger for n8n. Receives updates without webhooks.",
     "license": "MIT",
     "homepage": "https://github.com/VARTOTeam/n8n-nodes-varto-telegram",
