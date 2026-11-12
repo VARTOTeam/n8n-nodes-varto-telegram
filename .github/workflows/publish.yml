@@ -49,4 +49,4 @@ jobs:
           npm run build
 
       - name: Publish package with provenance
-        run: npm publish --provenance --access public
+        run: npm stage publish --provenance --access public
