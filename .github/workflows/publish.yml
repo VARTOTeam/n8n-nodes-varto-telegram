@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - '*.*.*'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -37,6 +38,7 @@ jobs:
         run: npm ci
 
       - name: Verify version matches tag
+        if: github.event_name == 'push'
         run: |
           PACKAGE_VERSION=$(node -p "require('./package.json').version")
           TAG_VERSION="${GITHUB_REF_NAME}"
